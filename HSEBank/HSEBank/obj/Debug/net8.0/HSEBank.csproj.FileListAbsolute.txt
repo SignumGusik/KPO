@@ -1,0 +1,14 @@
+/Users/signum/RiderProjects/HSEBank/HSEBank/bin/Debug/net8.0/HSEBank
+/Users/signum/RiderProjects/HSEBank/HSEBank/bin/Debug/net8.0/HSEBank.deps.json
+/Users/signum/RiderProjects/HSEBank/HSEBank/bin/Debug/net8.0/HSEBank.runtimeconfig.json
+/Users/signum/RiderProjects/HSEBank/HSEBank/bin/Debug/net8.0/HSEBank.dll
+/Users/signum/RiderProjects/HSEBank/HSEBank/bin/Debug/net8.0/HSEBank.pdb
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.AssemblyInfo.cs
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.dll
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/refint/HSEBank.dll
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.pdb
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/HSEBank.genruntimeconfig.cache
+/Users/signum/RiderProjects/HSEBank/HSEBank/obj/Debug/net8.0/ref/HSEBank.dll
