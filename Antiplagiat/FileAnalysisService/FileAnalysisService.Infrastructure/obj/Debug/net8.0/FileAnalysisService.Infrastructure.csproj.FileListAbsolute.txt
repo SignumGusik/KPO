@@ -1,0 +1,17 @@
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.Infrastructure.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.Infrastructure.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/bin/Debug/net8.0/FileAnalysisService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnal.796DBB96.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/refint/FileAnalysisService.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/FileAnalysisService.Infrastructure.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Infrastructure/obj/Debug/net8.0/ref/FileAnalysisService.Infrastructure.dll

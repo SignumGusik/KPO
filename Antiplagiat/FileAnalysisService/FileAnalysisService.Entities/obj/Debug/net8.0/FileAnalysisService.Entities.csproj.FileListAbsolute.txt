@@ -1,0 +1,11 @@
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/bin/Debug/net8.0/FileAnalysisService.Entities.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/bin/Debug/net8.0/FileAnalysisService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/bin/Debug/net8.0/FileAnalysisService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/refint/FileAnalysisService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/FileAnalysisService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Entities/obj/Debug/net8.0/ref/FileAnalysisService.Entities.dll

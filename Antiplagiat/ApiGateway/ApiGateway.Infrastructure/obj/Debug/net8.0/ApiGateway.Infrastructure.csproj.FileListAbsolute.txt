@@ -1,0 +1,17 @@
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.Infrastructure.deps.json
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.Infrastructure.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/bin/Debug/net8.0/ApiGateway.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGatew.CB5AAEC7.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/refint/ApiGateway.Infrastructure.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ApiGateway.Infrastructure.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Infrastructure/obj/Debug/net8.0/ref/ApiGateway.Infrastructure.dll

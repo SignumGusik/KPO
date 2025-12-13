@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ExHaWEX8VFmuZf+IN7avPkAcD+i9W1YI4/k1c06sJXs=",
+  "Source": "FileAnalysisService.Host",
+  "BasePath": "_content/FileAnalysisService.Host",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

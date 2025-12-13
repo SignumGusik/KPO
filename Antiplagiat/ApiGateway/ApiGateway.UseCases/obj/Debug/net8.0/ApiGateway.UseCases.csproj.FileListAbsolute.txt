@@ -1,0 +1,15 @@
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/bin/Debug/net8.0/ApiGateway.UseCases.deps.json
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/bin/Debug/net8.0/ApiGateway.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/bin/Debug/net8.0/ApiGateway.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/bin/Debug/net8.0/ApiGateway.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/bin/Debug/net8.0/ApiGateway.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGatew.D5E60238.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/refint/ApiGateway.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ApiGateway.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.UseCases/obj/Debug/net8.0/ref/ApiGateway.UseCases.dll

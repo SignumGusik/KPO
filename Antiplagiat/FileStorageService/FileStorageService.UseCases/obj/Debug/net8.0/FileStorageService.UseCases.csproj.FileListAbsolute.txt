@@ -1,0 +1,15 @@
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/bin/Debug/net8.0/FileStorageService.UseCases.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/bin/Debug/net8.0/FileStorageService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/bin/Debug/net8.0/FileStorageService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/bin/Debug/net8.0/FileStorageService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/bin/Debug/net8.0/FileStorageService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStor.61934005.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/refint/FileStorageService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/FileStorageService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.UseCases/obj/Debug/net8.0/ref/FileStorageService.UseCases.dll

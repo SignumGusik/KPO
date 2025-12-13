@@ -1,0 +1,11 @@
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/bin/Debug/net8.0/ApiGateway.Entities.deps.json
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/bin/Debug/net8.0/ApiGateway.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/bin/Debug/net8.0/ApiGateway.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/refint/ApiGateway.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ApiGateway.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/ApiGateway/ApiGateway.Entities/obj/Debug/net8.0/ref/ApiGateway.Entities.dll

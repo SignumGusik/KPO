@@ -1,0 +1,15 @@
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/bin/Debug/net8.0/FileAnalysisService.UseCases.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/bin/Debug/net8.0/FileAnalysisService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/bin/Debug/net8.0/FileAnalysisService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/bin/Debug/net8.0/FileAnalysisService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/bin/Debug/net8.0/FileAnalysisService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnal.5811676F.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/refint/FileAnalysisService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/FileAnalysisService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.UseCases/obj/Debug/net8.0/ref/FileAnalysisService.UseCases.dll

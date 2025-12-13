@@ -1,0 +1,17 @@
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.Presentation.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.Presentation.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.Presentation.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.UseCases.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.UseCases.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/bin/Debug/net8.0/FileStorageService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.csproj.AssemblyReference.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStor.F49829DC.Up2Date
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/refint/FileStorageService.Presentation.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/FileStorageService.Presentation.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Presentation/obj/Debug/net8.0/ref/FileStorageService.Presentation.dll

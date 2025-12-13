@@ -1,0 +1,11 @@
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/bin/Debug/net8.0/FileStorageService.Entities.deps.json
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/bin/Debug/net8.0/FileStorageService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/bin/Debug/net8.0/FileStorageService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.GeneratedMSBuildEditorConfig.editorconfig
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.AssemblyInfoInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.AssemblyInfo.cs
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.csproj.CoreCompileInputs.cache
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/refint/FileStorageService.Entities.dll
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/FileStorageService.Entities.pdb
+/Users/signum/RiderProjects/Antiplagiat/FileStorageService/FileStorageService.Entities/obj/Debug/net8.0/ref/FileStorageService.Entities.dll

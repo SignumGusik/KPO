@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "11GKc4gtDlY=",
+  "success": true,
+  "projectFilePath": "/Users/signum/RiderProjects/Antiplagiat/FileAnalysisService/FileAnalysisService.Presentation/FileAnalysisService.Presentation.csproj",
+  "expectedPackageFiles": [
+    "/Users/signum/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.1/microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

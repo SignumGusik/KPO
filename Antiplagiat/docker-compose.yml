@@ -1,0 +1,95 @@
+version: "3.9"
+
+services:
+  # ====== PostgreSQL для FileStorage ======
+  filestorage-db:
+    image: postgres:16
+    container_name: filestorage-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: filestorage
+    volumes:
+      - filestorage_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d filestorage"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ====== PostgreSQL для FileAnalysis ======
+  fileanalysis-db:
+    image: postgres:16
+    container_name: fileanalysis-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: fileanalysis
+    volumes:
+      - fileanalysis_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d fileanalysis"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ====== FileStorageService ======
+  filestorage-service:
+    build:
+      context: ./FileStorageService
+      dockerfile: FileStorageService.Host/Dockerfile
+    container_name: filestorage-service
+    depends_on:
+      filestorage-db:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_URLS: http://+:5020
+      CONNECTIONSTRINGS__DEFAULTCONNECTION: Host=filestorage-db;Port=5432;Database=filestorage;Username=postgres;Password=postgres
+    ports:
+      - "5020:5020"
+    volumes:
+      # здесь будут жить реальные файлы работ
+      - filestorage_files:/app/files
+
+  # ====== FileAnalysisService ======
+  fileanalysis-service:
+    build:
+      context: ./FileAnalysisService
+      dockerfile: FileAnalysisService.Host/Dockerfile
+    container_name: fileanalysis-service
+    depends_on:
+      fileanalysis-db:
+        condition: service_healthy
+      filestorage-service:
+        condition: service_started
+    environment:
+      ASPNETCORE_URLS: http://+:5145
+      CONNECTIONSTRINGS__DEFAULTCONNECTION: Host=fileanalysis-db;Port=5432;Database=fileanalysis;Username=postgres;Password=postgres
+      # База для REST-клиента к FileStorage
+      FileStorageApi__BaseUrl: http://filestorage-service:5020
+    ports:
+      - "5145:5145"
+
+  # ====== ApiGateway ======
+  apigateway-service:
+    build:
+      context: ./ApiGateway
+      dockerfile: ApiGateway.Host/Dockerfile
+    container_name: apigateway-service
+    depends_on:
+      filestorage-service:
+        condition: service_started
+      fileanalysis-service:
+        condition: service_started
+    environment:
+      ASPNETCORE_URLS: http://+:5090
+      # URL-ы для Refit-клиентов
+      FileStorageApi__BaseUrl: http://filestorage-service:5020
+      FileAnalysisApi__BaseUrl: http://fileanalysis-service:5145
+    ports:
+      - "5090:5090"
+
+volumes:
+  filestorage_db_data:
+  fileanalysis_db_data:
+  filestorage_files:
