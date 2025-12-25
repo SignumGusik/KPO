@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Goz-on-mono UI</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 24px; }
+        .row { display: flex; gap: 12px; flex-wrap: wrap; margin: 12px 0; }
+        input { padding: 10px; min-width: 260px; }
+        button { padding: 10px 14px; cursor: pointer; }
+        pre { background: #111; color: #0f0; padding: 12px; overflow: auto; border-radius: 10px; }
+        .card { border: 1px solid #ddd; border-radius: 12px; padding: 14px; margin-top: 14px; }
+        label { display:block; margin: 8px 0 6px; font-weight: 600; }
+        small { color: #666; }
+        .muted { color:#888; }
+    </style>
+</head>
+<body>
+<h2>Frontend (через gateway)</h2>
+<small>Все запросы идут на <b>/orders/*</b> и <b>/payments/*</b> (gateway: http://localhost:8080). WS: <b>/orders/ws</b></small>
+
+<div class="card">
+    <label>UserId</label>
+    <input id="userId" placeholder="например u1" value="u1" />
+
+    <div class="row">
+        <button onclick="createAccount()">Создать счёт</button>
+        <button onclick="topup()">Пополнить</button>
+        <button onclick="createOrder()">Создать заказ</button>
+        <button onclick="getOrders()">Список заказов</button>
+        <button onclick="getBalance()">Баланс</button>
+    </div>
+
+    <div class="row">
+        <div>
+            <label class="muted">Topup amount</label>
+            <input id="topupAmount" type="number" value="100" />
+        </div>
+        <div>
+            <label class="muted">Order amount</label>
+            <input id="orderAmount" type="number" value="50" />
+        </div>
+    </div>
+
+    <div class="row">
+        <button onclick="scenario()">Сценарий (account→topup→order→WS/poll→balance)</button>
+    </div>
+</div>
+
+<h3>Лог</h3>
+<pre id="log"></pre>
+
+<script>
+    const logEl = document.getElementById("log");
+    const base = ""; // same-origin (через gateway)
+
+    function log(...args) {
+        const s = args.map(a => typeof a === "string" ? a : JSON.stringify(a, null, 2)).join(" ");
+        logEl.textContent = (s + "\n\n" + logEl.textContent).slice(0, 20000);
+    }
+
+    function uid() {
+        return document.getElementById("userId").value.trim();
+    }
+
+    async function req(method, url, body) {
+        const opt = { method, headers: { "Content-Type": "application/json" } };
+        if (body !== undefined) opt.body = JSON.stringify(body);
+        const res = await fetch(base + url, opt);
+        const text = await res.text();
+        let data = text;
+        try { data = JSON.parse(text); } catch {}
+        if (!res.ok) throw { status: res.status, data };
+        return data;
+    }
+
+    // ------------------------
+    // WebSocket (orders status push)
+    // ------------------------
+    let ws = null;
+    let wsSubs = new Set();
+
+    function wsUrl() {
+        const proto = location.protocol === "https:" ? "wss" : "ws";
+        return `${proto}://${location.host}/orders/ws`;
+    }
+
+    function ensureWs() {
+        if (ws && (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING)) return;
+
+        ws = new WebSocket(wsUrl());
+
+        ws.onopen = () => {
+            log("WS connected:", wsUrl());
+            // resubscribe all known orderIds
+            for (const orderId of wsSubs) {
+                try { ws.send(JSON.stringify({ type: "subscribe", orderId })); } catch {}
+            }
+        };
+
+        ws.onmessage = (ev) => {
+            let msg = ev.data;
+            try { msg = JSON.parse(ev.data); } catch {}
+            log("📨 WS:", msg);
+            
+            const status = (msg.status || "").toString().toUpperCase();
+            if (status.includes("PAID") || status.includes("FAILED")) {
+                log(`WS final status for ${msg.orderId}: ${msg.status}`);
+            }
+        };
+
+        ws.onerror = () => log("WS error");
+        ws.onclose = () => log("WS closed");
+    }
+
+    function subscribeOrder(orderId) {
+        if (!orderId) return;
+        wsSubs.add(orderId);
+        ensureWs();
+
+        const payload = JSON.stringify({ type: "subscribe", orderId });
+
+        const send = () => {
+            try {
+                ws.send(payload);
+                log("WS subscribed:", orderId);
+            } catch (e) {
+                log("WS subscribe send error:", e);
+            }
+        };
+
+        if (ws.readyState === WebSocket.OPEN) send();
+        else ws.addEventListener("open", send, { once: true });
+    }
+
+    // ------------------------
+    // Payments endpoints
+    // POST /payments/accounts { userId }
+    // POST /payments/accounts/{userId}/topup { amount }
+    // GET  /payments/accounts/{userId}
+    // ------------------------
+    async function createAccount() {
+        const userId = uid();
+        try {
+            const r = await req("POST", "/payments/accounts", { userId });
+            log("createAccount:", r);
+            return r;
+        } catch (e) {
+            log("createAccount error:", e);
+            throw e;
+        }
+    }
+
+    async function topup() {
+        const userId = uid();
+        const amount = Number(document.getElementById("topupAmount").value || 0);
+        try {
+            const r = await req("POST", `/payments/accounts/${encodeURIComponent(userId)}/topup`, { amount });
+            log("topup:", r);
+            return r;
+        } catch (e) {
+            log("topup error:", e);
+            throw e;
+        }
+    }
+
+    async function getBalance() {
+        const userId = uid();
+        try {
+            const r = await req("GET", `/payments/accounts/${encodeURIComponent(userId)}`);
+            log("balance:", r);
+            return r;
+        } catch (e) {
+            log("balance error:", e);
+            throw e;
+        }
+    }
+
+    // ------------------------
+    // Orders endpoints (через gateway)
+    // Controller: [Route("orders")]
+    // POST /orders/orders{ userId, amount }
+    // GET  /orders/orders?userId=u1
+    // GET  /orders/orders/{orderId}
+    // ------------------------
+    async function createOrder() {
+        const userId = uid();
+        const amount = Number(document.getElementById("orderAmount").value || 0);
+        try {
+            const r = await req("POST", "/orders/orders", { userId, amount });
+            log("createOrder:", r);
+
+            const orderId = r.orderId || r.id || r.orderID;
+            if (orderId) subscribeOrder(orderId);
+
+            return r;
+        } catch (e) {
+            log("createOrder error:", e);
+            throw e;
+        }
+    }
+
+    async function getOrders() {
+        const userId = uid();
+        try {
+            const r = await req("GET", `/orders/orders?userId=${encodeURIComponent(userId)}`);
+            log("orders:", r);
+            return r;
+        } catch (e) {
+            log("orders error:", e);
+            throw e;
+        }
+    }
+
+    async function getOrderStatus(orderId) {
+        try {
+            const r = await req("GET", `/orders/orders/${encodeURIComponent(orderId)}`);
+            log(`order ${orderId} status:`, r);
+            return r;
+        } catch (e) {
+            log(`order ${orderId} status error:`, e);
+            throw e;
+        }
+    }
+
+    async function pollFinalStatus(orderId, maxSeconds = 20) {
+        const deadline = Date.now() + maxSeconds * 1000;
+        while (Date.now() < deadline) {
+            const o = await getOrderStatus(orderId);
+            const status = (o.status ?? "").toString().toUpperCase();
+            if (status.includes("PAID") || status.includes("FAILED")) return o;
+            await new Promise(r => setTimeout(r, 1000));
+        }
+        throw new Error("Timeout: order not finalized");
+    }
+
+    async function scenario() {
+        const userId = uid();
+        log("▶️ scenario for", userId);
+
+        // гарантируем WS заранее
+        ensureWs();
+
+        try {
+            await createAccount();
+        } catch { /* account может уже существовать */ }
+
+        await topup();
+
+        const order = await createOrder();
+        const orderId = order.orderId || order.id || order.orderID;
+
+        if (!orderId || typeof orderId !== "string") {
+            log("Не смог найти orderId в ответе createOrder. Посмотри лог выше.");
+            return;
+        }
+
+        log("Ждём финальный статус для orderId:", orderId);
+
+        try {
+            await pollFinalStatus(orderId, 25);
+        } catch (e) {
+            log("poll timeout (WS мог отработать).", e);
+        }
+
+        await getBalance();
+    }
+</script>
+</body>
+</html>
